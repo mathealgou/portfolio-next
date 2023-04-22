@@ -1,0 +1,57 @@
+.titleContainer {
+	overflow: hidden;
+}
+
+.title {
+	color: #006666;
+	text-align: center;
+	white-space: nowrap;
+	text-shadow: 2px 4px 4px #CCCCCC;
+	font-size: 96px;
+	overflow: hidden;
+	overflow-y: hidden;
+	animation: titleAnimation 1s ease-in-out;
+}
+
+@keyframes titleAnimation {
+	0% {
+		transform: translateY(100%);
+	}
+
+	100% {
+		transform: translateY(0);
+	}
+}
+
+.tagline {
+	color: #008584;
+	text-align: center;
+	text-shadow: 2px 4px 4px #CCCCCC;
+	font-size: 64px;
+	overflow: hidden;
+	overflow-y: hidden;
+	animation: taglineAnimation 1s ease-in-out forwards;
+	transform: translateY(-100%);
+	animation-delay: 0.3s;
+}
+
+@keyframes taglineAnimation {
+	0% {
+		transform: translateY(-100%);
+	}
+
+	100% {
+		transform: translateY(0);
+	}
+}
+
+@media screen and (max-width: 740px) {
+	.title {
+		font-size: 36px;
+	}
+
+	.tagline {
+		font-size: 24px;
+	}
+
+}
