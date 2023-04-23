@@ -1,8 +1,7 @@
 import styles from "./page.module.css";
 // * Components
-import Image from "next/image";
-import PageTitle from "@/app/components/PageTitle";
-import NavigationButton from "./components/NavigationButton";
+import PageTitle from "@/components/PageTitle";
+import NavigationButton from "@/components/NavigationButton";
 
 export default function Home() {
 	return (
